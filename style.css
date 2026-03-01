@@ -5795,10 +5795,18 @@ lottie-player {
     /* Asegurar que esté detrás */
   }
 
-  /* Color blanco para el icono de hamburguesa en móvil */
-  .menu-button,
-  .w-icon-nav-menu {
-    color: #ffffff !important;
+  /* Icono de hamburguesa en móvil - CSS puro */
+  .menu-button .w-icon-nav-menu {
+    font-size: 0 !important;
+    /* Ocultar el glifo corrupto */
+    width: 22px !important;
+    height: 2px !important;
+    background-color: #ffffff !important;
+    position: relative !important;
+    display: block !important;
+    box-shadow:
+      0 7px 0 #ffffff,
+      0 14px 0 #ffffff !important;
   }
 }
 
