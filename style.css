@@ -5731,10 +5731,33 @@ lottie-player {
     padding: 80px 5%;
   }
 
+  /* Reset grid columns for all MNTN blocks in mobile */
   .mntn-grid-right,
   .mntn-grid-left {
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
+  }
+
+  /* Centrar bloques de contenido y texto */
+  .mntn-section .content-block {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mntn-tagline {
+    justify-content: center;
+  }
+
+  .mntn-line {
+    display: none;
+  }
+
+  /* Forzar todas las piezas a la columna 1 */
+  .mntn-grid .reveal-left,
+  .mntn-grid .reveal-right {
+    grid-column: 1 !important;
   }
 
   .mntn-grid-left .reveal-left {
@@ -5745,6 +5768,22 @@ lottie-player {
     grid-row: 1;
   }
 
+  /* Centrado específico de "Principios y Valores" (Sección 03) */
+  .div-block-3 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .lottie-animation-3 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 280px !important;
+  }
+
   .bg-number {
     font-size: 150px;
     left: 0;
@@ -5752,6 +5791,8 @@ lottie-player {
     text-align: left;
     opacity: 0.5;
     top: -20px;
+    z-index: -1;
+    /* Asegurar que esté detrás */
   }
 }
 
