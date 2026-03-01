@@ -5794,6 +5794,12 @@ lottie-player {
     z-index: -1;
     /* Asegurar que esté detrás */
   }
+
+  /* Color blanco para el icono de hamburguesa en móvil */
+  .menu-button,
+  .w-icon-nav-menu {
+    color: #ffffff !important;
+  }
 }
 
 /* Hero Section */
