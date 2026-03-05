@@ -4827,8 +4827,9 @@ lottie-player {
   }
 
   .navbar {
-    z-index: 5;
-    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+    background-color: rgba(27, 73, 101, 0.95);
+    backdrop-filter: blur(10px);
     width: 100%;
     display: flex;
   }
@@ -5105,11 +5106,12 @@ lottie-player {
 
   .icon {
     mix-blend-mode: normal;
-    background-color: #fff;
+    color: #fff;
   }
 
   .navbar {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(27, 73, 101, 0.95);
+    backdrop-filter: blur(10px);
     position: absolute;
   }
 
